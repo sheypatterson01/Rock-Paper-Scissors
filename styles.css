@@ -1,14 +1,17 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-weight: bold;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(hsl(239, 82%, 67%), hsl(293, 93%, 58%));
+    background-attachment: fixed;
+    -webkit-text-stroke: 2px black;
 }
 h1{
     font-size: 3.5rem;
-    color: hsl(0, 0, 20%);
+    color: rgb(8, 175, 231);
 }
 .choices{
     margin-bottom: 30px;
@@ -18,26 +21,29 @@ h1{
     min-width: 160px;
     margin: 0 10px;
     border-radius: 250px;
-    background-color: hsl(200, 100%, 50%);
+    background-color: rgb(94, 22, 234);
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease-in-out;
 }
 .choices button:hover{
-    background-color: hsl(295, 100%, 70%);
+    background-color: rgb(241, 93, 177);
 }
 #playerDisplay, #computerDisplay{
     font-size: 2.5rem;
+    color: rgb(8, 175, 231);
 }
 #resultDisplay{
     font-size: 5rem;
     margin: 30px 0;
+    
 }
 .scoreDisplay{
     font-size: 2rem;
+    color: hsl(191, 100%, 50%);
 }
 .winText, #playerScoreDisplay{
-    color: rgb(255, 217, 0);
+    color: rgb(94, 22, 234);
 }
 .loseText, #computerScoreDisplay{
-    color: rgb(204, 53, 91);
+    color: rgb(242, 0, 137);
 }
